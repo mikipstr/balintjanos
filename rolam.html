@@ -207,56 +207,60 @@
       }
 
 
-      video {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
       .video-container {
         position: relative;
-        width: 100%;
-        max-width: 600px;
-        margin: auto;
+        display: flex;
+        justify-content: center; /* Center the thumbnail horizontally */
+        align-items: center; /* Center the thumbnail vertically if the container height is set */
+        width: 100%; /* Ensure the container takes the full width of its parent */
       }
 
-      .ime-video {
-        width: 100%;
+      .video-thumbnail {
+        width: 500px; /* Adjust width as needed */
         height: auto;
+        border-radius: 30px; /* Rounds the corners */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for transform and box-shadow */
+      }
+
+      .video-thumbnail:hover {
+        transform: scale(1.05); /* Slightly enlarges the image on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a better visual effect */
       }
 
       .unmute-button {
         position: absolute;
-        bottom: 10px;
+        top: 10px;
         right: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background: none;
         border: none;
-        padding: 5px;
         cursor: pointer;
-        border-radius: 30%;
-        display: none;
+        z-index: 10; /* Ensures the button is on top of the image */
       }
 
       .unmute-button img {
-        width: 40px;
-        height: 40px;
+        width: 24px;
+        height: 24px;
+      }
+      @media(max-width: 400px){
+        .video-thumbnail {
+          width: 350px; /* Adjust width as needed */
+          height: auto;
+          border-radius: 30px; /* Rounds the corners */
+          transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for transform and box-shadow */
+        }
       }
 
-      .unmute-button.show {
-        display: block;
-      }
     </style>
 
     <div class="ime-container">
       <h2 class="ime-title">Ismerj Meg Engem!</h2>
 
       <div class="video-container">
-        <video class="ime-video" src="images/Célok%20ereje-%20Bálint%20János%20története.mp4" type="video/mp4" autoplay muted></video>
-        <button class="unmute-button">
-          <img src="images/mute.png" alt="Unmute">
-        </button>
-      </div>
+        <a href="https://www.youtube.com/watch?v=-Z4KCn1JtPg" target="_blank">
+          <img src="https://img.youtube.com/vi/-Z4KCn1JtPg/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
+        </a>
 
+      </div>
 
       <script>
         const video = document.querySelector('.ime-video');
