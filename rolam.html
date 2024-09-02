@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Bálint János</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+
+
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+
+
+<style>
+  .a{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+
+  .elme {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+    padding: 12px 45px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: -25px;
+  }
+
+  .elme a {
+    font-weight: bolder;
+    padding-left: 10%;
+    font-size: 25px;
+    color: red;
+  }
+
+  .elme:hover {
+    background-color: red;
+  }
+
+  .elme:hover a {
+    color: white;
+  }
+
+
+
+  .img-box:hover{
+    background-color: red;
+    color: red;
+  }
+
+</style>
+
+
+
+
+<body>
+<div class="hero_area">
+
+
+  <!-- header section strats -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="edzés.html">
+            <span>
+              Bálint János
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav  ">
+              <li class="nav-item">
+                <a class="nav-link" href="edzés.html">Edzés<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="szolgaltatasok.html">Szolgáltatások</a>
+              </li>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="rolam.html">Rólam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="izelito.html">Ízelítő</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+
+
+
+  <section class="ime-section">
+    <style>
+      .ime-section {
+        font-family: Arial, sans-serif;
+        color: white;
+        line-height: 1.8;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url('images/fusti.jpg');
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: revert;
+        padding: 40px 0;
+      }
+      .ime-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .ime-title {
+        font-size: 3.5em;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .ime-subtitle {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 20px;
+        color: yellow;
+        font-weight: bolder;
+      }
+      .ime-video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        margin-bottom: 30px;
+      }
+      .ime-video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .ime-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .ime-text {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        max-width: 600px;
+        margin-bottom: 30px;
+      }
+      .ime-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+      .ime-highlight {
+        color: red;
+        font-weight: bolder;
+      }
+      .ime-fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
+      }
+      .ime-fade-in.ime-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .ime-divider {
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        margin: 40px 0;
+      }
+
+
+      video {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .ime-video {
+        width: 100%;
+        height: auto;
+      }
+
+      .unmute-button {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 30%;
+        display: none;
+      }
+
+      .unmute-button img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .unmute-button.show {
+        display: block;
+      }
+    </style>
+
+    <div class="ime-container">
+      <h2 class="ime-title">Ismerj Meg Engem!</h2>
+
+      <div class="video-container">
+        <video class="ime-video" src="images/Célok%20ereje-%20Bálint%20János%20története.mp4" type="video/mp4" autoplay muted></video>
+        <button class="unmute-button">
+          <img src="images/mute.png" alt="Unmute">
+        </button>
+      </div>
+
+
+      <script>
+        const video = document.querySelector('.ime-video');
+        const unmuteButton = document.querySelector('.unmute-button');
+
+        unmuteButton.addEventListener('click', () => {
+          if (video.muted) {
+            video.muted = false;
+            unmuteButton.classList.remove('show');
+          }
+        });
+
+        video.addEventListener('play', () => {
+          if (video.muted) {
+            unmuteButton.classList.add('show');
+          }
+        });
+      </script>
+
+      <div class="ime-content">
+        <div class="ime-text ime-fade-in">
+          <p>Én sem mindig voltam <span class="ime-highlight">mosolygós</span>, pozitív beállítottságú ember, és ha röviden össze kellene foglalnom az életemet, akkor valahogy így nézne ki:</p>
+          <p>Szegény családban születtem, és épp, hogy elkezdtem az általános iskolát, <span class="ime-highlight">meghaltak a szüleim</span>.</p>
+          <p>A dolgok gyorsan történnek, és akkor döbbensz rá, mit veszítettél el, amikor már késő.</p>
+        </div>
+
+        <img class="ime-image ime-fade-in" src="images/DSC02767-1024x768.jpg" alt="Image 1">
+
+        <div class="ime-text ime-fade-in">
+          <p><span class="ime-highlight">Árván</span> nőttem fel, egy számomra teljesen új környezetben, egy új családban. Kövér és zárkózott kisfiúként elég nehéz volt ez az időszak. (Az új szüleimtől mindent megkaptam, de az iskolában már más volt a helyzet.)</p>
+          <p>Sokat csúfoltak mert árva és kövér voltam, és csak arra tudtam gondolni, hogy ha felnövök, akkor mindenre elszánt, <span class="ime-highlight">bátor és erős</span> katona leszek, aki kiváló fizikummal rendelkezik és akit nem lenéznek az emberek, hanem tisztelnek a tettei miatt. (Lehet, hogy túl sokszor láttam a Rambo filmeket.)</p>
+        </div>
+
+        <img class="ime-image ime-fade-in" src="images/balint_janos.png" alt="Image 2">
+
+        <div class="ime-text ime-fade-in">
+          <p><span class="ime-highlight">Kitartóan küzdöttem</span> míg el nem értem a célomat, és emlékszem arra a napra, amikor egy alakulótér betonján álltam, talpig egyenruhában és az eskümet tettem a hazám védelmére.</p>
+          <p>Katonaként eljutottam egészen Afrikáig, ahol olyan esemény történt velem, amit nehéz szavakba önteni, de <span class="ime-highlight">megváltoztatta az egész addigi Életemet</span>, és elindított egy számomra  teljesen új úton.</p>
+          <p><span class="ime-highlight">Élni akartam</span>, és minél többet megtapasztalni azokból a csodákból amit az Élet tartogat számunkra. Elindultam felfedezni és újra megtalálni saját magamat. Megnyertem egy 42 kilométeres maratoni versenyt, és elvégeztem a személyi edző szakot.</p>
+        </div>
+
+        <img class="ime-image ime-fade-in" src="images/minedn_nap_ajandek3-oiryfk0ewpmgdpyleazen9cndlrnn6r48kivgw2h7k.png" alt="Image 3">
+
+        <div class="ime-text ime-fade-in">
+          <p>Ahogy egyre több olyan módszerre tettem szert, amikkel jobbá tettem az Életemet, rájöttem, hogy ezt a tudást meg kell osztanom az emberekkel és <span class="ime-highlight">segítenem kell</span> ott ahol tudok.</p>
+          <p>Több, mint 10 éven át tartó önfejlesztésnek és kutatómunkának az eredménye lett az első könyvem:</p>
+          <p><span class="ime-highlight">A MINDEN NAP AJÁNDÉK</span></p>
+          <p>Az Életem a sportról és az egészséges, <span class="ime-highlight">örömteli Élet</span> megéléséről, bemutatásáról szól.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="ime-container">
+      <div class="ime-divider ime-fade-in"></div>
+      <h2 class="ime-subtitle ime-fade-in">Milyen előnyökkel jár, ha velem edzel?</h2>
+
+      <div class="ime-content">
+        <div class="ime-text ime-fade-in">
+          <p><span class="ime-highlight">Céltudatosabb</span> és <span class="ime-highlight">eredményesebb</span> leszel!</p>
+          <p>Megspórolod azt a rengeteg időt, amit edzésmódszerek, gyakorlatok, étrendek, diéták kutatásával, kipróbálásával elpazarolnál.</p>
+          <p>Több, mint <span class="ime-highlight">20 év edzéssel</span>, életmódváltással töltött időm tapasztalata áll a rendelkezésedre.</p>
+        </div>
+
+        <img class="ime-image ime-fade-in" src="images/online_edzes_otthon_balint_janos.jpg-768x860.png" alt="Otthoni edző">
+
+        <div class="ime-text ime-fade-in">
+          <p>A <span class="ime-highlight">fokozatosság elve</span> szerint haladunk előre, azaz ha kezdő vagy, nem kell félned a túl nagy súlyok használatától.</p>
+          <p>Folyamatosan naplózom az edzéseidet, nyomon követjük a fejlődésed.</p>
+          <p><span class="ime-highlight">Motivállak</span>, tippekkel segítelek, hogy végig az utadon maradj, és ne add fel.</p>
+          <p>Olyan étrendet állítok össze, amit teljesen a te célodhoz és életviteledhez igazítok.</p>
+        </div>
+      </div>
+
+
+
+      <div class="ime-divider ime-fade-in"></div>
+
+      <h2 class="ime-subtitle ime-fade-in">Online Személyi edzőként mi jellemez engem?</h2>
+
+      <div class="ime-content">
+        <div class="ime-text ime-fade-in">
+          <p>1. Maximálisan rád figyelek és nem a telefonomat nyomkodom edzés közben.</p>
+          <p>2. Minden alkalommal amikor tréningezünk <span class="ime-highlight">motivállak</span>, folyamosan a célodhoz vezető utadon tartalak.</p>
+          <p>3. Naplózom az edzéseinket, pontosan tudom, hogy melyik nap mit csináltunk, nem tőled várom el, hogy emlékezz vissza.</p>
+        </div>
+
+        <img class="ime-image ime-fade-in" src="images/online_edzo-1-150x150.jpg" alt="Online tanácsadás">
+
+        <div class="ime-text ime-fade-in">
+          <p>4. Minden egyes bókodnak, elismerésednek amit kapsz jobban örülök mint te magad.</p>
+          <p>5. <span class="ime-highlight">Pozitív gondolkodású</span> vagyok, nem panaszkodom neked, épp ellenkezőleg: a te problémáid / kihívásaid vannak előtérbe helyezve, hiszen te vagy a lényeg.</p>
+          <p>6. Nem cigizek, nem járok gyorsétterembe és nem iszok minden nap / hétvégén alkoholt, miközben az egészséges Életet hirdetem.</p>
+        </div>
+      </div>
+
+      <!-- Add more content here following the same pattern -->
+
+      <div class="ime-divider ime-fade-in"></div>
+
+
+
+      <h2 class="ime-subtitle ime-fade-in">Rólam mondták</h2>
+
+      <div class="ime-content">
+        <div class="ime-text ime-fade-in">
+          <p>"Régóta próbálkozom, hogy az egészséges életmód gyakorlása a mindennapjaimba beleolvadjon, de sajnos a motiváció sokszor túl gyorsan elfogyott. Jánossal a közös munkát egy állapotfelmérés előzte meg, ahol pontos képet kaptam a testem jelenlegi állapotáról, arról, hogy min és mivel tudunk javítani/fejleszteni. Az eddigi edzések kivétel nélkül <span class="ime-highlight">hihetetlen jók</span> voltak. Az összeállított étrend betartásával nem csak a súlyom csökkentését kezdem érezni, hanem sokkal energikusabb vagyok és hozzáteszem, nagyon változatos és finom ételeket ehetek." - Dózsa Diána</p>
+        </div>
+
+        <img class="ime-image ime-fade-in" src="images/szemelyi_edzo_budapest.jpg" alt="Bálint János">
+
+        <div class="ime-text ime-fade-in">
+          <p>"Ő az, aki az <span class="ime-highlight">álmaim és a céljaim</span> közé hidat képes építeni. Ő életem egyik legjobb döntése." - Rafael Tünde</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const imeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('ime-visible');
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      });
+
+      document.querySelectorAll('.ime-fade-in').forEach(el => {
+        imeObserver.observe(el);
+      });
+    </script>
+  </section>
+
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_items">
+
+        <a href="https://www.facebook.com/balintjanosedzo/">
+          <div class="item ">
+            <div class="img-box ">
+
+              <img src="images/facebook-app-symbol.png" style="margin-bottom: -75%">
+            </div>
+            <div class="detail-box">
+              <p>
+                Facebook
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <div class="item ">
+          <div class="img-box box-2">
+            <img src="" alt="">
+          </div>
+          <div class="detail-box">
+            <p>
+              06 20 527 79 81
+            </p>
+          </div>
+        </div>
+
+
+        <div class="item ">
+          <div class="img-box box-3">
+            <img src="" alt="">
+          </div>
+          <div class="detail-box">
+            <p>
+              balint.janos.edzo@gmail.com
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</div>
+</body>
+
+</html>
