@@ -28,7 +28,7 @@ JavaScript – Interaktív elemek és funkcionalitás
 
 Klónozd a repót:
 
-git clone https://github.com/shepherdmike03/balintjanos.git
+git clone https://github.com/mikipstr/balintjanos.git
 
 Nyisd meg a index.html fájlt egy böngészőben.
 
